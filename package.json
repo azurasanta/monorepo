@@ -1,20 +1,37 @@
 {
-  "name": "monorepo",
-  "version": "1.0.0",
-  "description": "",
+  "name": "react-monorepo",
+  "version": "0.0.1",
+  "license": "MIT",
   "private": true,
-  "workspaces": [
-    "apps/*"
-  ],
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gorhom/react-monorepo.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@mui/material": "^5.15.11",
-    "zustand": "^4.5.2"
-  }
+  "keywords": [
+    "react",
+    "react-native",
+    "monorepo",
+    "shared",
+    "yarn",
+    "workspaces"
+  ],
+  "author": "Mo Gorhom",
+  "bugs": {
+    "url": "https://github.com/gorhom/react-monorepo/issues"
+  },
+  "homepage": "https://github.com/gorhom/react-monorepo",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/react-native",
+      "**/react-native/**",
+      "**/react-native-*"
+    ]
+  },
+  "scripts": {
+    "nuke": "yarn workspaces run nuke && rm -rf node_modules && rm -f yarn.lock"
+  },
+  "devDependencies": {}
 }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TextInput, Button } from './atoms';
+import {TextInput, Button} from '../atoms';
 
 type LoginFormProps = {
   onSignIn: (credentials: { username: string; password: string }) => void;
