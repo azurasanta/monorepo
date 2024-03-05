@@ -22,7 +22,7 @@
   "homepage": "https://github.com/gorhom/react-monorepo",
   "workspaces": {
     "packages": [
-      "packages/*"
+      "apps/*"
     ],
     "nohoist": [
       "**/react-native",
@@ -33,5 +33,12 @@
   "scripts": {
     "nuke": "yarn workspaces run nuke && rm -rf node_modules && rm -f yarn.lock"
   },
-  "devDependencies": {}
+  "dependencies": {
+    "@types/react-dom": "^18.2.20",
+    "eslint-plugin-react": "^7.34.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.2",
+    "typescript": "^5.3.3"
+  }
 }
