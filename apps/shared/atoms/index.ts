@@ -1,6 +1,3 @@
-import { TextInput, Button } from "./TextInput";
 
-export { 
-    TextInput, 
-    Button 
-} 
+
+export { Button } from "./Button"
