@@ -4,42 +4,24 @@
   "main": "index.js",
   "license": "MIT",
   "private": true,
-  "workspaces": [
-    "apps/*"
-  ],
-<<<<<<< HEAD
-=======
   "author": "Mo Gorhom",
   "bugs": {
     "url": "https://github.com/gorhom/react-monorepo/issues"
   },
   "homepage": "https://github.com/gorhom/react-monorepo",
-  "workspaces": {
-    "packages": [
-      "apps/*"
-    ],
-    "nohoist": [
-      "**/react-native",
-      "**/react-native/**",
-      "**/react-native-*"
-    ]
-  },
->>>>>>> 3d7a526a49bfca773071ad0ff7dab4f6d1fb767a
+  "workspaces": [
+    "apps/*"
+  ],
   "scripts": {
     "start": "lerna run --parallel start"
   },
-<<<<<<< HEAD
-  "devDependencies": {
-    "lerna": "^8.1.2",
-    "typescript": "^4.4.2"
-=======
   "dependencies": {
+    "lerna": "^8.1.2",
     "@types/react-dom": "^18.2.20",
     "eslint-plugin-react": "^7.34.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.2",
     "typescript": "^5.3.3"
->>>>>>> 3d7a526a49bfca773071ad0ff7dab4f6d1fb767a
   }
 }
