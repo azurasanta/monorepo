@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {TextInput, Button} from '@monorepo/atoms';
+import {TextInput, Button} from '@monorepo/shared';
 
 type LoginFormProps = {
   onSignIn: (credentials: { username: string; password: string }) => void;
