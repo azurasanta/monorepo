@@ -1,22 +1,21 @@
 {
   "name": "@monorepo/shared",
-  "version": "0.0.0",
-  "description": "> TODO: description",
-  "author": "azurasanta <proguardseo@gmail.com>",
-  "homepage": "",
-  "license": "ISC",
-  "main": "lib/shared.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
-  "files": [
-    "lib"
-  ],
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "private": true,
   "scripts": {
-    "test": "node ./__tests__/shared.test.js"
+    "build": "rimraf dist && tsc",
+    "postinstall": "yarn build",
+    "watch": "tsc --watch"
+  },
+  "dependencies": {
+    "react": "18.2.0"
   },
   "devDependencies": {
+    "rimraf": "^5.0.5",
     "typescript": "^5.3.3"
-  }
+  },
+  "keywords": [],
+  "author": ""
 }

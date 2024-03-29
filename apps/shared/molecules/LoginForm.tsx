@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import {TextInput, Button} from '@monorepo/shared';
+import {Button} from '../atoms/Button';
+import {TextInput} from "../atoms/TextInput"
 
 type LoginFormProps = {
   onSignIn: (credentials: { username: string; password: string }) => void;
@@ -21,14 +22,13 @@ export const LoginForm = ({ onSignIn }: LoginFormProps) => {
         label="Username"
         placeholder="Enter your username"
         value={username}
-        onChange={(e) => setUsername(e.target.value)}
+        onChange={(e:any) => setUsername(e.target.value)}
       />
       <TextInput
         label="Password"
         placeholder="Enter your password"
-        type="password"
         value={password}
-        onChange={(e) => setPassword(e.target.value)}
+        onChange={(e:any) => setPassword(e.target.value)}
       />
       <Button label="Sign In" onClick={() => handleSignIn} />
     </form>

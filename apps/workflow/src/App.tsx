@@ -1,6 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Button } from "@monorepo/shared"
+import { Rating, Typography } from '@mui/material';
 
 function App() {
   return (
@@ -18,6 +20,12 @@ function App() {
         >
           Learn React
         </a>
+        <Button label="This Button is from @shared/atoms" onClick={() => { console.log("hello") }} />
+
+        <div>
+          <Rating name="disabled" value={3} disabled />
+          <Typography component="legend">This is MUI component</Typography>
+        </div>
       </header>
     </div>
   );
